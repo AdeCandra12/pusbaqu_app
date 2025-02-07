@@ -1,0 +1,14 @@
+/* Custom CSS for Card */
+.body {
+    background: linear-gradient(135deg, #041842, #e05924);
+}
+.card {
+    width: 100%; /* Atur lebar card */
+    max-width: 800px; /* Atur lebar maksimum card */
+    margin: auto; /* Pusatkan card */
+}
+
+.bg-light {
+    padding: 40px; /* Tambah padding dalam card */
+    border-radius: 10px; /* Tambah radius border untuk sudut */
+}
