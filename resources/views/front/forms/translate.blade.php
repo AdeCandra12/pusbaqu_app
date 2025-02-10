@@ -155,63 +155,66 @@
     <!-- ======= Footer ======= -->
     <footer id="footer">
         <div class="footer-top">
-            <div class="container">
-                <div class="row">
-                    <!-- Kolom 1: Informasi Footer -->
-                    <div class="col-lg-4 col-md-6 footer-info">
-                        <h3>Mamba</h3>
-                        <p>
-                            A108 Adam Street <br>
-                            NY 535022, USA<br><br>
-                            <strong>Phone:</strong> +1 5589 55488 55<br>
-                            <strong>Email:</strong> info@example.com<br>
-                        </p>
-                        <div class="social-links mt-3">
-                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                            <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-                        </div>
-                    </div>
-
-                    <!-- Kolom 2: Tautan Bermanfaat -->
-                    <div class="col-lg-4 col-md-6 footer-links">
-                        <h4>Useful Links</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Services</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy policy</a></li>
-                        </ul>
-                    </div>
-
-                    <!-- Kolom 3: Layanan Kami -->
-                    <div class="col-lg-4 col-md-6 footer-links">
-                        <h4>Our Services</h4>
-                        <ul>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Design</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Web Development</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Product Management</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Marketing</a></li>
-                            <li><i class="bx bx-chevron-right"></i> <a href="#">Graphic Design</a></li>
-                        </ul>
-                    </div>
-
+          <div class="container">
+            <div class="row">
+    
+              <!-- Kolom 1: Informasi Footer -->
+              <div class="col-lg-4 col-md-6 footer-info">
+                <img src="{{asset('assets/img/logo.png')}}" alt="ULBI Logo" style="max-width: 150px;">
+                <p style="margin-top: 10px;">
+                  ULBI adalah institusi pendidikan tinggi yang didirikan oleh Yayasan Pendidikan Bhakti Pos Indonesia (YPBPI). 
+                  ULBI memiliki visi menjadi perguruan tinggi vokasi yang unggul secara Nasional dalam bidang Logistik dan Manajemen Rantai Pasok.
+                </p>
+                <div class="social-links mt-3">
+                  <a href="#" class="social-icon"><i class="bx bxl-facebook"></i></a>
+                  <a href="#" class="social-icon"><i class="bx bxl-twitter"></i></a>
+                  <a href="#" class="social-icon"><i class="bx bxl-youtube"></i></a>
+                  <a href="#" class="social-icon"><i class="bx bxl-instagram"></i></a>
+                  <a href="#" class="social-icon"><i class="bx bxl-tiktok"></i></a>
                 </div>
+              </div>
+    
+              <!-- Kolom 2: Tautan Bermanfaat -->
+              <div class="col-lg-4 col-md-6 footer-links">
+                <h4>Lokasi</h4>
+                <p>Yayasan Pendidikan Bhakti Pos Indonesia (YPBPI)</p>
+                <p>Jalan Sariasih No. 54 Sarijadi Bandung, 40151, Jawa Barat Indonesia</p>
+                <h4>Kontak</h4>
+                <ul>
+                  <li>➝ <a href="#">Sekretariat</a></li>
+                  <li>➝ <a href="#">HUMAS</a></li>
+                  <li>➝ <a href="#">Admission</a></li>
+                </ul>
+                <h4>Email</h4>
+                <ul>
+                  <li>➝ <a href="#">info@ulbi.ac.id</a></li>
+                  <li>➝ <a href="#"></a>humas@ulbi.ac.id</a></li>
+                </ul>
+              </div>
+    
+              <!-- Kolom 3: Layanan Kami -->
+              <div class="col-lg-4 col-md-6 footer-links">
+                  <h4>Link Terkait</h4>
+                  <ul>
+                    <li>➝ <a href="#">Penerimaan Mahasiswa Baru (Admission)</a></li>
+                    <li>➝ <a href="#">Sistem Informasi Akademik (SIP)</a></li>
+                    <li>➝ <a href="#">Virtual Learning (VL)</a></li>
+                    <li>➝ <a href="#">Sistem Informasi Sumberdaya Terintegrasi</a></li>
+                    <li>➝ <a href="#">Endowment</a></li>
+                    <li>➝ <a href="#">Asrama Kampus & Kost</a></li>
+                  </ul>
+              </div>
+    
             </div>
+          </div>
         </div>
-
+    
         <div class="container">
-            <div class="copyright">
-                &copy; Copyright <strong><span>Mamba</span></strong>. All Rights Reserved
-            </div>
-            <div class="credits">
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
-            </div>
+          <div class="copyright">
+            &copy; 2025 <strong><span> Universitas Logistik dan Bisnis Internasional (ULBI)</span></strong>. All Rights Reserved
+          </div>
         </div>
-    </footer>
+      </footer><!-- End Footer -->
     <!-- End Footer -->
 @endsection
 

@@ -73,13 +73,13 @@
                                 <input type="password" name="password" class="form-control" id="floatingPassword" placeholder="Password" required autocomplete="current-password">
                                 <label for="floatingPassword">Password</label>
                             </div>
-                            <div class="d-flex align-items-center justify-content-between mb-4">
+                            {{-- <div class="d-flex align-items-center justify-content-between mb-4">
                                 <div class="form-check">
                                     <input type="checkbox" class="form-check-input" id="exampleCheck1" name="remember">
                                     <label class="form-check-label" for="exampleCheck1">Remember me</label>
                                 </div>
                                 <a href="{{ route('password.request') }}">Forgot Password</a>
-                            </div>
+                            </div> --}}
                             <button type="submit" class="btn btn-primary py-3 w-100 mb-4">SIGN IN</button>
                             <p class="text-center mb-0">Don't have an Account? <a href="{{ route('register') }}">Sign Up</a></p>
                         </form>

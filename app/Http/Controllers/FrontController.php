@@ -25,7 +25,7 @@ class FrontController extends Controller
     {
         return view('front.index', [
             'sliders' => Slider::latest()->get(),
-            'categories' => ServiceCategory::latest()->get(),
+            'categories' => ServiceCategory::take(5)->get(),
             'news' => News::latest()->take(5)->get(),
             'tutors' => Tutor::latest()->get(),
             'faqs' => Faq::latest()->get(),
@@ -157,7 +157,7 @@ class FrontController extends Controller
             // Update bukti bayar dan status pendaftaran
             $registration->update([
                 'payment_proof' => $filePath,
-                'status' => 'Menunggu Konfirmasi', // Perubahan status setelah upload bukti bayar
+                'status' => 'Menunggu Konfirmasi',
             ]);
         }
 

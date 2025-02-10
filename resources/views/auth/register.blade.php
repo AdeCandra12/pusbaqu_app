@@ -76,13 +76,12 @@
                                             <div class="p-5">
                                                 <h3 class="fw-normal mb-5">Additional Information</h3>
 
-                                                 <!-- Gender -->
+                                                 <!-- asal pendaftar -->
                                                  <div class="mb-4 pb-2">
                                                     <label class="form-label" for="registrant_type">Asal Pendaftar</label>
                                                     <select id="registrant_type" name="registrant_type" class="form-select" required>
-                                                        <option value="beasiswa_ulbi" {{ old('registrant_type') == 'beasiswa_ulbi' ? 'selected' : '' }}>BEASISWA ULBI</option>
-                                                        <option value="reguler" {{ old('registrant_type') == 'reguler' ? 'selected' : '' }}>Reguler</option>
-                                                        <option value="rpl" {{ old('registrant_type') == 'rpl' ? 'selected' : '' }}>RPL</option>
+                                                        <option value="" disabled selected>PILIH ASAL PENDAFTAR</option>
+                                                        <option value="mahasiswa" {{ old('registrant_type') == 'mahasiswa' ? 'selected' : '' }}>MAHASISWA</option>
                                                         <option value="umum" {{ old('registrant_type') == 'umum' ? 'selected' : '' }}>UMUM</option>
                                                     </select>
                                                 </div>
@@ -115,20 +114,20 @@
                                                         class="form-control form-control-lg" required />
                                                 </div>
     
-                                                <!-- Profile Picture -->
+                                                {{-- <!-- Profile Picture -->
                                                 <div class="mb-4 pb-2">
                                                     <label class="form-label text-white" for="photo">Profile Picture</label>
                                                     <input type="file" id="photo" name="photo"
                                                         class="form-control form-control-lg" />
-                                                </div>
+                                                </div> --}}
     
-                                                <!-- Terms and Conditions -->
+                                                {{-- <!-- Terms and Conditions -->
                                                 <div class="form-check d-flex justify-content-start mb-4 pb-3">
                                                     <input class="form-check-input me-3" type="checkbox" id="terms" required />
                                                     <label class="form-check-label text-white" for="terms">
                                                         I accept the <a href="#" class="text-white"><u>Terms and Conditions</u></a>.
                                                     </label>
-                                                </div>
+                                                </div> --}}
     
                                                 <!-- Submit Button -->
                                                 <div class="d-flex justify-content-between align-items-center">

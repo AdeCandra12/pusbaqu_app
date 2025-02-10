@@ -134,6 +134,70 @@
     </div>
 </section>
 <!-- End Contact Us Section -->
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <!-- Kolom 1: Informasi Footer -->
+          <div class="col-lg-4 col-md-6 footer-info">
+            <img src="{{asset('assets/img/logo.png')}}" alt="ULBI Logo" style="max-width: 150px;">
+            <p style="margin-top: 10px;">
+              ULBI adalah institusi pendidikan tinggi yang didirikan oleh Yayasan Pendidikan Bhakti Pos Indonesia (YPBPI). 
+              ULBI memiliki visi menjadi perguruan tinggi vokasi yang unggul secara Nasional dalam bidang Logistik dan Manajemen Rantai Pasok.
+            </p>
+            <div class="social-links mt-3">
+              <a href="#" class="social-icon"><i class="bx bxl-facebook"></i></a>
+              <a href="#" class="social-icon"><i class="bx bxl-twitter"></i></a>
+              <a href="#" class="social-icon"><i class="bx bxl-youtube"></i></a>
+              <a href="#" class="social-icon"><i class="bx bxl-instagram"></i></a>
+              <a href="#" class="social-icon"><i class="bx bxl-tiktok"></i></a>
+            </div>
+          </div>
+
+          <!-- Kolom 2: Tautan Bermanfaat -->
+          <div class="col-lg-4 col-md-6 footer-links">
+            <h4>Lokasi</h4>
+            <p>Yayasan Pendidikan Bhakti Pos Indonesia (YPBPI)</p>
+            <p>Jalan Sariasih No. 54 Sarijadi Bandung, 40151, Jawa Barat Indonesia</p>
+            <h4>Kontak</h4>
+            <ul>
+              <li>➝ <a href="#">Sekretariat</a></li>
+              <li>➝ <a href="#">HUMAS</a></li>
+              <li>➝ <a href="#">Admission</a></li>
+            </ul>
+            <h4>Email</h4>
+            <ul>
+              <li>➝ <a href="#">info@ulbi.ac.id</a></li>
+              <li>➝ <a href="#"></a>humas@ulbi.ac.id</a></li>
+            </ul>
+          </div>
+
+          <!-- Kolom 3: Layanan Kami -->
+          <div class="col-lg-4 col-md-6 footer-links">
+              <h4>Link Terkait</h4>
+              <ul>
+                <li>➝ <a href="#">Penerimaan Mahasiswa Baru (Admission)</a></li>
+                <li>➝ <a href="#">Sistem Informasi Akademik (SIP)</a></li>
+                <li>➝ <a href="#">Virtual Learning (VL)</a></li>
+                <li>➝ <a href="#">Sistem Informasi Sumberdaya Terintegrasi</a></li>
+                <li>➝ <a href="#">Endowment</a></li>
+                <li>➝ <a href="#">Asrama Kampus & Kost</a></li>
+              </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; 2025 <strong><span> Universitas Logistik dan Bisnis Internasional (ULBI)</span></strong>. All Rights Reserved
+      </div>
+    </div>
+  </footer><!-- End Footer -->
 @endsection
 
 
