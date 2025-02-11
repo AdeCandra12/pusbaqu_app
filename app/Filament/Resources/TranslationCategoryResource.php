@@ -38,6 +38,9 @@ class TranslationCategoryResource extends Resource
         return $table
             ->columns([
                 //
+                Tables\Columns\TextColumn::make('index')
+                    ->label('No') // Menampilkan nomor urut
+                    ->rowIndex(),
                 Tables\Columns\TextColumn::make('name')
                     ->label('Name')
                     ->sortable()
@@ -48,6 +51,7 @@ class TranslationCategoryResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

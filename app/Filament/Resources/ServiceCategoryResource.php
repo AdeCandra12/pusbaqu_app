@@ -46,6 +46,9 @@ class ServiceCategoryResource extends Resource
         return $table
             ->columns([
                 //
+                Tables\Columns\TextColumn::make('index')
+                    ->label('No') // Menampilkan nomor urut
+                    ->rowIndex(),
                 Tables\Columns\ImageColumn::make('icon')
                     ->label('Icon'),
                 Tables\Columns\TextColumn::make('name')
@@ -59,6 +62,7 @@ class ServiceCategoryResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

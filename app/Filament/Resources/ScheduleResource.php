@@ -39,6 +39,9 @@ class ScheduleResource extends Resource
     {
         return $table
             ->columns([
+                Tables\Columns\TextColumn::make('index')
+                    ->label('No') // Menampilkan nomor urut
+                    ->rowIndex(),
                 Tables\Columns\TextColumn::make('test_date')
                     ->label('Test Date')
                     ->sortable()
@@ -58,6 +61,7 @@ class ScheduleResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

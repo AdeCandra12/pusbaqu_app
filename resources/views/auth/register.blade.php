@@ -114,12 +114,12 @@
                                                         class="form-control form-control-lg" required />
                                                 </div>
     
-                                                {{-- <!-- Profile Picture -->
+                                                <!-- Profile Picture -->
                                                 <div class="mb-4 pb-2">
                                                     <label class="form-label text-white" for="photo">Profile Picture</label>
                                                     <input type="file" id="photo" name="photo"
                                                         class="form-control form-control-lg" />
-                                                </div> --}}
+                                                </div>
     
                                                 {{-- <!-- Terms and Conditions -->
                                                 <div class="form-check d-flex justify-content-start mb-4 pb-3">

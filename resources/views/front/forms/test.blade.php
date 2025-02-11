@@ -40,7 +40,7 @@
         <div class="container">
 
             <div class="section-title">
-                <h2>Form Test Prediction TOEFL/TOEIC</h2>
+                <h2>TEST REGISTRATION</h2>
             </div>
 
             <div class="row">
@@ -50,7 +50,7 @@
                         <i class="bx bx-map"></i>
                         <h3>Our Address</h3>
                         <p>
-                            Yayasan Pendidikan Bhakti Pos Indonesia (​YPBPI)
+                            Gedung Rektorat Lantai 1, Universitas Logistik dan Bisnis Internasional (ULBI),
                             Jalan Sariasih No. 54 Sarijadi Bandung, 40151, Jawa Barat Indonesia
                         </p>
                     </div>
@@ -166,7 +166,7 @@
                   <a href="#" class="social-icon"><i class="bx bxl-twitter"></i></a>
                   <a href="#" class="social-icon"><i class="bx bxl-youtube"></i></a>
                   <a href="#" class="social-icon"><i class="bx bxl-instagram"></i></a>
-                  <a href="#" class="social-icon"><i class="bx bxl-tiktok"></i></a>
+                  <a href="#" class="social-icon"><i class="bx bxl-twitch"></i></a>
                 </div>
               </div>
     

@@ -6,6 +6,7 @@ use App\Filament\Resources\TestCategoryResource\Pages;
 use App\Filament\Resources\TestCategoryResource\RelationManagers;
 use App\Models\TestCategory;
 use Filament\Forms;
+use Filament\Forms\Components\Tabs\Tab;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -38,6 +39,9 @@ class TestCategoryResource extends Resource
         return $table
             ->columns([
                 //
+                Tables\Columns\TextColumn::make('index')
+                    ->label('No') // Menampilkan nomor urut
+                    ->rowIndex(),
                 Tables\Columns\TextColumn::make('name')
                     ->searchable()
                     ->sortable(),
@@ -47,6 +51,7 @@ class TestCategoryResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

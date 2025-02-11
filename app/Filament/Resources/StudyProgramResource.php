@@ -19,11 +19,23 @@ class StudyProgramResource extends Resource
 
     protected static ?string $navigationIcon = 'heroicon-o-book-open';
 
-    protected static ?string $navigationLabel = 'Study Program';
+    protected static ?string $navigationLabel = 'Registrant Category';
+
+    protected static ?string $pluralLabel = 'Registrant Categories';
 
     protected static ?string $navigationGroup = 'Others';
 
     protected static ?int $navigationSort = 14;
+
+    public static function getModelLabel(): string
+    {
+        return 'Registrant Category';
+    }
+
+    public static function getPluralModelLabel(): string
+    {
+        return 'Registrant Categories';
+    }
 
     public static function form(Form $form): Form
     {
@@ -49,7 +61,9 @@ class StudyProgramResource extends Resource
     {
         return $table
             ->columns([
-                //
+                Tables\Columns\TextColumn::make('index')
+                    ->label('No') // Menampilkan nomor urut
+                    ->rowIndex(),
                 Tables\Columns\TextColumn::make('code')
                     ->label('Code')
                     ->sortable()
@@ -58,18 +72,24 @@ class StudyProgramResource extends Resource
                     ->label('Name')
                     ->sortable()
                     ->searchable(),
-                Tables\Columns\TextColumn::make('slug')
-                    ->label('Slug'),
                 Tables\Columns\TextColumn::make('faculty')
                     ->label('Faculty')
                     ->sortable()
                     ->searchable(),
             ])
+
+            // Tables\Actions\HeaderActions::make([
+            //     Button::make('Export')
+            //         ->icon('heroicon-o-document-download')
+            //         ->url('export'),
+            // ])
+
             ->filters([
                 Tables\Filters\TrashedFilter::make(),
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([
@@ -79,6 +99,7 @@ class StudyProgramResource extends Resource
                 ]),
             ]);
     }
+
 
     public static function getRelations(): array
     {
@@ -103,4 +124,9 @@ class StudyProgramResource extends Resource
                 SoftDeletingScope::class,
             ]);
     }
+
+    // public static function canCreate(): bool
+    // {
+    //     return false; // Ini akan menyembunyikan tombol Create di header tabel
+    // }
 }

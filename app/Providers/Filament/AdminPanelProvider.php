@@ -42,6 +42,35 @@ class AdminPanelProvider extends PanelProvider
                 Widgets\AccountWidget::class,
                 // Widgets\FilamentInfoWidget::class,
             ])
+
+            ->navigationGroups(
+                [
+                    // 'Test Registration' => [
+                    //     'label' => 'Test Management',
+                    //     'icon' => 'heroicon-o-clipboard-list',
+                    // ],
+
+                    // 'Course Management' => [
+                    //     'label' => 'Course Management',
+                    //     'icon' => 'heroicon-o-book-open',
+                    // ],
+
+                    // 'Translation Management' => [
+                    //     'label' => 'Translation Management',
+                    //     'icon' => 'heroicon-o-language',
+                    // ],
+
+                    // 'User Management' => [
+                    //     'label' => 'User Management',
+                    //     'icon' => 'heroicon-o-user-group',
+                    // ],
+
+                    // 'Others' => [
+                    //     'label' => 'Others',
+                    //     'icon' => 'heroicon-o-clipboard-list',
+                    // ],
+                ]
+            )
             ->middleware([
                 EncryptCookies::class,
                 AddQueuedCookiesToResponse::class,

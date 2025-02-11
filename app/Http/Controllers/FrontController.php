@@ -67,7 +67,7 @@ class FrontController extends Controller
                 'purpose' => 'required|string',
             ]);
             $data['user_id'] = Auth::id();
-            $data['status'] = 'pengajuan VA';
+            $data['status'] = 'Menunggu Pembayaran';
             TestRegistration::create($data);
         } elseif ($slug === 'kursus-bahasa-asing') {
             $data = $request->validate([
@@ -75,7 +75,7 @@ class FrontController extends Controller
                 'study_program_id' => 'required|exists:study_programs,id',
             ]);
             $data['user_id'] = Auth::id();
-            $data['status'] = 'pengajuan VA';
+            $data['status'] = 'Menunggu Pembayaran';
             CourseRegistration::create($data);
         } elseif ($slug === 'penerjemahan-dokumen') {
             $data = $request->validate([
@@ -83,7 +83,7 @@ class FrontController extends Controller
                 'document_file' => 'required|file|mimes:jpeg,png,pdf,doc,docx|max:2048',
             ]);
             $data['user_id'] = Auth::id();
-            $data['status'] = 'pengajuan VA';
+            $data['status'] = 'Menunggu Pembayaran';
             $data['document_file'] = $request->file('document_file')->store('document_files', 'public');
             TranslationRegistration::create($data);
         } else {

@@ -45,6 +45,9 @@ class FaqResource extends Resource
         return $table
             ->columns([
                 //
+                Tables\Columns\TextColumn::make('index')
+                    ->label('No') // Menampilkan nomor urut
+                    ->rowIndex(),
                 Tables\Columns\TextColumn::make('question')
                     ->searchable()
                     ->label('Pertanyaan'),
@@ -57,6 +60,7 @@ class FaqResource extends Resource
             ])
             ->actions([
                 Tables\Actions\EditAction::make(),
+                Tables\Actions\DeleteAction::make(),
             ])
             ->bulkActions([
                 Tables\Actions\BulkActionGroup::make([

@@ -34,10 +34,11 @@
     <section>
         <div class="container">
             <div class="bg-light rounded h-100 p-4">
-                <h6 class="text-lg-center">Riwayat Pendaftaran Layanan</h6>
+                <h2 class="text-lg-center">Riwayat Pendaftaran Layanan</h2>
     
               <!-- 📌 **TEST PREDICTION** -->
                 @if($testRegistrations->isNotEmpty())
+                
                 <h5 class="mt-4 text-primary">📖 Test Prediction</h5>
                 <table class="table table-bordered">
                     <thead class="thead-dark">
@@ -67,10 +68,10 @@
                                 <td>{{ optional($registration->testCategory)->name ?? '-' }}</td>
                                 <td>{{ $registration->status }}</td>
                                 <td style="display: flex; gap: 10px;">
-                                    <a class="btn btn-info btn-sm" 
+                                    {{-- <a class="btn btn-info btn-sm" 
                                     href="{{ route('front.detail', ['slug' => 'tes-kemampuan-bahasa-inggris', 'id' => $registration->id]) }}">
                                     Detail
-                                    </a>
+                                    </a> --}}
                                     <a class="btn btn-warning btn-sm" 
                                     href="{{ route('front.payproof', ['slug' => 'tes-kemampuan-bahasa-inggris', 'id' => $registration->id]) }}">
                                     Bukti Bayar
@@ -111,10 +112,10 @@
                                 <td>{{ optional($registration->courseCategory)->name ?? '-' }}</td>
                                 <td>{{ $registration->status }}</td>
                                 <td style="display: flex; gap: 10px;">
-                                    <a class="btn btn-info btn-sm" 
+                                    {{-- <a class="btn btn-info btn-sm" 
                                     href="{{ route('front.detail', ['slug' => 'kursus-bahasa-asing', 'id' => $registration->id]) }}">
                                     Detail
-                                    </a>
+                                    </a> --}}
                                     <a class="btn btn-warning btn-sm" 
                                     href="{{ route('front.payproof', ['slug' => 'kursus-bahasa-asing', 'id' => $registration->id]) }}">
                                     Bukti Bayar
@@ -153,10 +154,10 @@
                                 <td>{{ optional($registration->translationCategory)->name ?? '-' }}</td>
                                 <td>{{ $registration->status }}</td>
                                 <td style="display: flex; gap: 10px;">
-                                    <a class="btn btn-info btn-sm" 
+                                    {{-- <a class="btn btn-info btn-sm" 
                                     href="{{ route('front.detail', ['slug' => 'penerjemahan-dokumen', 'id' => $registration->id]) }}">
                                     Detail
-                                    </a>
+                                    </a> --}}
                                     <a class="btn btn-warning btn-sm" 
                                     href="{{ route('front.payproof', ['slug' => 'penerjemahan-dokumen', 'id' => $registration->id]) }}">
                                     Bukti Bayar
