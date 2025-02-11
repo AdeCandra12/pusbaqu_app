@@ -126,7 +126,7 @@
     
             <div class="berita-container row">
                 @foreach($news as $item)
-                    <div class="berita-item col-lg-4 col-md-6" onclick="location.href='{{ route('news.show', $item->slug) }}'">
+                    <div class="berita-item col-lg-4 col-md-6" onclick="location.href='{{ route('front.news', $item->slug) }}'">
                         <!-- Gambar Berita -->
                         <img src="{{ $item->thumbnail ? Storage::url($item->thumbnail) : asset('assets/front/img/default-news.png') }}" alt="{{ $item->title }}">
     

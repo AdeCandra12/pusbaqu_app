@@ -1,5 +1,5 @@
 @extends('layouts.master')
-@section('title', 'Pusba - Home')
+@section('title', 'Pusba - History')
 @section('content')
 
 <header id="header">

@@ -26,10 +26,29 @@ class FrontController extends Controller
         return view('front.index', [
             'sliders' => Slider::latest()->get(),
             'categories' => ServiceCategory::take(5)->get(),
-            'news' => News::latest()->take(5)->get(),
+            'news' => News::where('status', 'published')
+                ->orderBy('publish_date', 'desc')
+                ->take(5)
+                ->get(),
             'tutors' => Tutor::latest()->get(),
             'faqs' => Faq::latest()->get(),
         ]);
+    }
+
+    public function show($slug)
+    {
+        // Ambil berita berdasarkan slug
+        $newsItem = News::where('slug', $slug)->firstOrFail();
+
+        // Ambil berita trending berdasarkan kategori yang sama
+        $trendingNews = News::where('category', $newsItem->category)
+            ->where('id', '!=', $newsItem->id)
+            ->where('status', 'published')
+            ->orderBy('publish_date', 'desc')
+            ->take(5)
+            ->get();
+
+        return view('front.news', compact('newsItem', 'trendingNews'));
     }
 
     public function form($slug)
@@ -54,6 +73,8 @@ class FrontController extends Controller
             default => abort(404)
         };
     }
+
+
 
     public function submit(Request $request, $slug)
     {

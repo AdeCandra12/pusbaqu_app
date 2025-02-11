@@ -5,7 +5,7 @@ use App\Http\Controllers\FrontController;
 use App\Http\Controllers\ProfileController;
 
 Route::get('/', [FrontController::class, 'index'])->name('front.index');
-Route::get('/berita/{slug}', [FrontController::class, 'show'])->name('news.show');
+Route::get('/berita/{slug}', [FrontController::class, 'show'])->name('front.news');
 
 
 //create me a route to connect to the getTestRegistrations function which functions to retrieve registrant data from the test_registrations table, by retrieving the registrant data from the 'registrant' role
