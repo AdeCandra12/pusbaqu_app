@@ -19,16 +19,8 @@ class roleAdminSeeder extends Seeder
             'name' => 'admin'
         ]);
 
-        $lenderRole = Role::create([
-            'name' => 'lender'
-        ]);
-
-        $agentRole = Role::create([
-            'name' => 'agent'
-        ]);
-
         $RegistrantRole = Role::create([
-            'name' => 'Registrant'
+            'name' => 'registrant'
         ]);
 
         $user = User::create([
