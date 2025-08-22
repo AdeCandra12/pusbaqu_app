@@ -78,7 +78,7 @@
 
                 @if($slug === 'tes-kemampuan-bahasa-inggris')
                     <div class="form-group">
-                        <label for="program">Program Studi</label>
+                        <label for="program">Kategori Pendaftar</label>
                         <input type="text" class="form-control" value="{{ optional($registration->studyProgram)->name ?? '-' }}" disabled>
                     </div>
                     <div class="form-group">

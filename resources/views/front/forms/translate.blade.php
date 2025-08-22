@@ -94,7 +94,7 @@
                                 <div class="form-group">
                                     <label for="translation_category_id">Kategori Terjemahan</label>
                                     <select class="form-control" name="translation_category_id" required>
-                                        <option value="">Pilih Kategori...</option>
+                                        <option value="" disabled selected>Pilih Kategori...</option>
                                         @foreach($translationCategories as $category)
                                             <option value="{{ $category->id }}">{{ $category->name }}</option>
                                         @endforeach

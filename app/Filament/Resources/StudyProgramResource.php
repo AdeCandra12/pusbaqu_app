@@ -48,7 +48,7 @@ class StudyProgramResource extends Resource
                     ->maxLength(10),
                 Forms\Components\TextInput::make('name')
                     ->required()
-                    ->label('Name')
+                    ->label('category')
                     ->maxLength(255),
                 Forms\Components\TextInput::make('faculty')
                     ->required()
@@ -69,7 +69,7 @@ class StudyProgramResource extends Resource
                     ->sortable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('name')
-                    ->label('Name')
+                    ->label('category')
                     ->sortable()
                     ->searchable(),
                 Tables\Columns\TextColumn::make('faculty')

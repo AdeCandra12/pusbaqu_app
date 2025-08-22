@@ -48,7 +48,7 @@
                             <th>Email</th>
                             <th>NPM/NIK</th>
                             <th>Asal</th>
-                            <th>Program Studi</th>
+                            <th>Kategori Pendaftar</th>
                             <th>Tanggal Test</th>
                             <th>Kategori Test</th>
                             <th>Status</th>
@@ -94,7 +94,7 @@
                             <th>Email</th>
                             <th>NPM/NIK</th>
                             <th>Asal</th>
-                            <th>Program Studi</th>
+                            <th>Kategori Pendaftar</th>
                             <th>Kategori Kursus</th>
                             <th>Status</th>
                             <th>Aksi</th>

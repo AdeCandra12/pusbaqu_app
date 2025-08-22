@@ -44,7 +44,7 @@ class CourseRegistrationResource extends Resource
                                         ->preload()
                                         ->required(),
                                     Forms\Components\Select::make('study_program_id')
-                                        ->label('study program')
+                                        ->label('category registrant')
                                         ->relationship('studyProgram', 'name')
                                         ->searchable()
                                         ->preload()

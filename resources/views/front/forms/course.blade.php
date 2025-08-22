@@ -95,7 +95,7 @@
                                 <div class="form-group">
                                     <label for="course_category_id">Kategori Kursus</label>
                                     <select class="form-control" name="course_category_id" required>
-                                        <option value="">Pilih Kategori Kursus...</option>
+                                        <option value="" disabled selected>Pilih Kategori Kursus...</option>
                                         @foreach($courseCategories as $courseCat)
                                             <option value="{{ $courseCat->id }}">{{ $courseCat->name }}</option>
                                         @endforeach
@@ -104,9 +104,9 @@
 
                                 <!-- Pilih Jadwal -->
                                 <div class="form-group">
-                                    <label for="study_program_id">Program Studi</label>
+                                    <label for="study_program_id">Kategori Pendaftar</label>
                                     <select class="form-control" name="study_program_id" required>
-                                        <option value="">Pilih Program Studi...</option>
+                                        <option value="" disabled selected>Pilih Kategori Pendaftar...</option>
                                         @foreach($studyPrograms as $studyProgram)
                                             <option value="{{ $studyProgram->id }}">{{ $studyProgram->name }}</option>
                                         @endforeach
